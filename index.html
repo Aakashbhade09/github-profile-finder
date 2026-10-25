@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>GitHub Profile Finder</h1>
+
+        <p class="subtitle">
+            Enter a GitHub username to explore the profile.
+        </p>
+
+        <form id="searchForm">
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter GitHub username"
+                required
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="message" role="status"></p>
+
+        <div class="profile" id="profile">
+            <img
+                id="avatar"
+                class="avatar"
+                alt="GitHub profile picture"
+            >
+
+            <h2 id="name"></h2>
+            <p id="login" class="username"></p>
+            <p id="bio" class="bio"></p>
+
+            <div class="stats">
+                <div class="stat">
+                    <h3 id="repos">0</h3>
+                    <p>Repositories</p>
+                </div>
+
+                <div class="stat">
+                    <h3 id="followers">0</h3>
+                    <p>Followers</p>
+                </div>
+
+                <div class="stat">
+                    <h3 id="following">0</h3>
+                    <p>Following</p>
+                </div>
+            </div>
+
+            <a
+                id="profileLink"
+                class="profile-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >View GitHub Profile</a>
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>

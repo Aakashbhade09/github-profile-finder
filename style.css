@@ -1,0 +1,142 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+h1 {
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #8b949e;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    background: #161b22;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #58a6ff;
+}
+
+button {
+    padding: 13px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #238636;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2ea043;
+}
+
+.profile {
+    display: none;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #58a6ff;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+h2 {
+    margin: 5px 0;
+}
+
+.username {
+    color: #8b949e;
+    margin-bottom: 15px;
+}
+
+.bio {
+    color: #c9d1d9;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.stat {
+    background: #21262d;
+    padding: 15px 5px;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    color: #58a6ff;
+    margin: 0 0 8px;
+    font-size: 21px;
+}
+
+.stat p {
+    color: #8b949e;
+    margin: 0;
+    font-size: 12px;
+}
+
+.profile-link {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 11px 18px;
+    background: #30363d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.profile-link:hover {
+    background: #484f58;
+}
+
+#message {
+    color: #f85149;
+    margin: 15px 0;
+}
